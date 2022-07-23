@@ -32,6 +32,9 @@ public class Main {
 
 		InstructorManager instructorManager = new InstructorManager();
 		instructorManager.addMultiple(instructors);
+
+		studentManager.getCourseScoreState(student1);
+		instructorManager.getSalaryAmount(instructor1);
 	}
 
 }
