@@ -18,7 +18,7 @@ public class GameRepository implements BaseDataRepository {
 	@Override
 	public void delete(Entity entity) {
 		entities.remove(entity);
-		System.out.println("Oyun eklendi!");
+		System.out.println("Oyun silindi!");
 	}
 
 	@Override
