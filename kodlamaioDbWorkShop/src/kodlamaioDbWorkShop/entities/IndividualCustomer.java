@@ -6,19 +6,19 @@ public class IndividualCustomer extends Customer {
 	private String firstName;
 	private String lastName;
 	private String nationaltyId;
-	private CommercialActivity activity;
+	
 
 	public IndividualCustomer() {
 		super();
 	}
 
-	public IndividualCustomer(int id, String customerNumber, Channel channel, List<Adress> adresses, String firstName,
-			String lastName, String nationaltyId, CommercialActivity activity) {
+	public IndividualCustomer(int id, String customerNumber, Channel channel, List<Adress> adresses,
+			String firstName, String lastName, String nationaltyId) {
 		super(id, customerNumber, channel, adresses);
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.nationaltyId = nationaltyId;
-		this.activity = activity;
+		
 	}
 
 	public String getFirstName() {
@@ -45,12 +45,6 @@ public class IndividualCustomer extends Customer {
 		this.nationaltyId = nationaltyId;
 	}
 
-	public CommercialActivity getActivity() {
-		return activity;
-	}
 
-	public void setActivity(CommercialActivity activity) {
-		this.activity = activity;
-	}
 
 }
